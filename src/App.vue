@@ -102,8 +102,8 @@ onMounted(() => {
 
       <div v-for="todo in todos_asc" :class="`todo-item ${ todo.done && 'done' }`" >
 
-        <label for="done">
-          <input type="checkbox" v-model="todo.done" name="done" id="done">
+        <label>
+          <input type="checkbox" v-model="todo.done">
           <span :class="`bubble ${todo.category}`"></span>
         </label>
 
